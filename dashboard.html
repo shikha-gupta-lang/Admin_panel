@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Bridge Admin Panel</title>
+  <link rel="stylesheet" href="dashboard.css"/>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Health Bridge</h2>
+      <ul>
+        <li>📊 Dashboard</li>
+        <li>🧑 Patients</li>
+        <li>👨‍⚕️ Doctors</li>
+        <li>⚙️ Settings</li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header>
+        <h1>Doctors Management</h1>
+        <p>Manage and moderate doctors profiles</p>
+      </header>
+
+      <section class="content">
+        <h2>doctors (12)</h2>
+        <input type="text" id="searchInput"  placeholder="Search doctors..."/>
+        <table id="doctorsTable">
+          <thead>
+            <tr>
+              <th>doctor</th>
+              <th>Email</th>
+              <th>Category</th>
+              <th>Verified</th>
+              <th>Rating</th>
+              <th>Flag Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="doctorsBody">
+            <!-- Data rows inserted via JS -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
